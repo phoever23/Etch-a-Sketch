@@ -1,0 +1,19 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+
+.small-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.grid {    
+    border: rgb(233, 227, 227) 0.5px solid;
+    height: 28px;
+    width: 28px;
+    margin: 0;
+    padding: 0;
+}
