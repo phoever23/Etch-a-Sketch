@@ -1,8 +1,18 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+button {
+    align-self: center;
+}
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
+    align-items: center;
 }
 
 .small-container {
@@ -12,8 +22,12 @@
 
 .grid {    
     border: rgb(233, 227, 227) 0.5px solid;
-    height: 28px;
-    width: 28px;
+    height: 38px;
+    width: 38px;
     margin: 0;
     padding: 0;
+}
+
+.grid-hover {
+    background-color: black;
 }
