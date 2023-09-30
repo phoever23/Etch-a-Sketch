@@ -36,7 +36,6 @@ function changeGrid(){
     const grids = document.querySelectorAll(".grid");
     grids.forEach(grid => {grid.addEventListener("mouseover",changeBackground)    
 });
-
     
 }
 
@@ -48,5 +47,4 @@ const grids = document.querySelectorAll(".grid");
 });
 
 const button = document.querySelector("button");
-
 button.addEventListener("click",changeGrid)
