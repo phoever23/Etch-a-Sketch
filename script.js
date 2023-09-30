@@ -1,5 +1,6 @@
 const container = document.querySelector(".container");
 
+
 // a function to create n * n square grid with 640px wide
 function createGrid(n) {
     for (let i = 0; i < n; i++) {
@@ -12,7 +13,7 @@ function createGrid(n) {
     const grid = document.createElement("div");
     grid.classList.add("grid");
     grid.style.height = `${640/n-2}px`;
-    grid.style.width = `${640/n-2}px`;
+    grid.style.width = `${640/n-2}px`;    
     smallContainer.appendChild(grid);
 }    
 });    
@@ -20,7 +21,11 @@ function createGrid(n) {
 
 // change the background color to black when hovering on the div
 function changeBackground(e) {
-    e.target.classList.add("grid-hover")
+    let r = Math.floor(Math.random()*255);
+    let g = Math.floor(Math.random()*255);
+    let b = Math.floor(Math.random()*255);
+    e.target.style.backgroundColor = `rgb(${r},${g},${b})`;
+
 }
 
 function changeGrid(){
